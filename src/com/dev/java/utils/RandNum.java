@@ -8,4 +8,7 @@ import java.util.List;
 public interface RandNum {
     public List<Integer> getRandomList();
     public List<Integer> getRandomList(int size);
+
+    public List<Integer> getUniqueRandomList();
+    public List<Integer> getUniqueRandomList(int size);
 }
