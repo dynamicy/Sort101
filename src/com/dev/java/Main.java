@@ -18,12 +18,19 @@ public class Main {
         for (int data : dataList) {
             System.out.print(data);
         }
-        System.out.println();
 
-        System.out.println("============== Sorted List ============== ");
+        System.out.println("\n============== Sorted List (Ascent) ============== ");
         Sort sort = new BubbleSort();
 
-        dataList = sort.sort(dataList);
+        dataList = sort.ascent(dataList);
+
+        for (int data : dataList) {
+            System.out.print(data);
+        }
+
+        System.out.println("\n============== Sorted List (Descent) ============== ");
+
+        dataList = sort.descent(dataList);
 
         for (int data : dataList) {
             System.out.print(data);
