@@ -12,7 +12,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         RandNumUtil randNumUtil = new RandNumUtil();
-        List<Integer> dataList = randNumUtil.getUniqueRandomList(10);
+        List<Integer> dataList = randNumUtil.getRandomList(1, 7, 20);
 
         System.out.println("============== Original List ============== ");
         for (int data : dataList) {

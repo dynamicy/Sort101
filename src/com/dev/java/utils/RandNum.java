@@ -11,4 +11,10 @@ public interface RandNum {
 
     public List<Integer> getUniqueRandomList();
     public List<Integer> getUniqueRandomList(int size);
+
+    public List<Integer> getRandomList(int min, int max, int size);
+    public List<Integer> getRandomList(int min, int max);
+
+    public List<Integer> getUniqueRandomList(int min, int max, int size);
+    public List<Integer> getUniqueRandomList(int min, int max);
 }
