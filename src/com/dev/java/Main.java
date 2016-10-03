@@ -7,12 +7,12 @@ import com.dev.java.utils.RandNumUtil;
 import java.util.List;
 
 /**
- * Created by chris on 02/10/2016.
+ * Sort comparision
  */
 public class Main {
     public static void main(String[] args) {
         RandNumUtil randNumUtil = new RandNumUtil();
-        List<Integer> dataList = randNumUtil.getRandomList(1, 7, 20);
+        List<Integer> dataList = randNumUtil.getRandomList();
 
         System.out.println("============== Original List ============== ");
         for (int data : dataList) {
@@ -31,6 +31,22 @@ public class Main {
         System.out.println("\n============== Sorted List (Descent) ============== ");
 
         dataList = sort.descent(dataList);
+
+        for (int data : dataList) {
+            System.out.print(data);
+        }
+
+        System.out.println("\n============== Sorted List (Optimized Ascent) ============== ");
+
+        dataList = sort.optimizedAscent(dataList);
+
+        for (int data : dataList) {
+            System.out.print(data);
+        }
+
+        System.out.println("\n============== Sorted List (Optimized Descent) ============== ");
+
+        dataList = sort.optimizedDescent(dataList);
 
         for (int data : dataList) {
             System.out.print(data);

@@ -16,11 +16,9 @@ public class ListUtil {
      * @return
      */
     public static List<Integer> swapData(List<Integer> dataList, int i, int j) {
-        if (dataList.get(i).compareTo(dataList.get(j)) < 0) {
-            int temp = dataList.get(i);
-            dataList.set(i, dataList.get(j));
-            dataList.set(j, temp);
-        }
+        int temp = dataList.get(i);
+        dataList.set(i, dataList.get(j));
+        dataList.set(j, temp);
         return dataList;
     }
 }
